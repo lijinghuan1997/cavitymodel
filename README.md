@@ -13,14 +13,18 @@
 
   The main arithmetic is ODE45 to solve the differential equations, so the requirement for the versions is very low. 
   # Instructions
+  You can just ran the demo.m to get all the result. And the detailed process are shown below.
+  
   Run the code_submit.m, at first. 
 
   Run the momentum_submit.m, secondly.
 
   Run the model_submit.m, at last.
   # Running time
-  The expected result lasts about an hour (code_submit.m), with the recommended specs (16 GB RAM, 8 cores@3.6 GHz)
-
+  The expected result lasts about more than 10 hours (demo.m), with the recommended specs (16 GB RAM, 8 cores@3.6 GHz)
+  code_submit.m lasts about an hour.
+  momentum_submit.m lasts about 8 hours.
+  model.submit.m lasts about an hour.
   # Results
   code_submit.m----data_end.mat  
   % source code, generating the profiles
@@ -43,7 +47,11 @@
   The first section in the code_submit.m is about this part. 
 
   The parameters are mainly about number density, temperature for different population, the magnetic strength at the center, as well as the angular velocity. 
-
+  
+  Besides all the parameters above, there are also variables, "jieshu" and "qujian", that we can change. 
+  "jieshu" represents the iteration times.
+  "qujian" represents the integration interval.
+  
   The normalized variables and the relations among the parameters, can refer to [Shustov et al., 2016].
   Shustov, P. I. , Artemyev, A. V. , Vasko, I. Y. , & Yushkov, E. V. . (2016). Kinetic models of sub-ion cylindrical magnetic hole. Physics of Plasmas, 23(12), 122903.
 
