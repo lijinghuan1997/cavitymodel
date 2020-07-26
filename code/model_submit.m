@@ -37,7 +37,7 @@ convection=-vv.*interp1(xnew,y(2,:),xplot,'spline').*params.B0*10^-9;
 inertial=params.me/params.e.*int_ve.^2./xplot/params.D*1e2;
 
 % divergence P term
-divp=interp1(momentum{6,1},momentum{1,1}*1e3.*interp1(xnew,Bnew,A{6,1},'spline')*1e-9,xplot,'spline');
+divp=interp1(momentum{6,1},momentum{1,1}*1e3.*interp1(xnew,Bnew,momentum{6,1},'spline')*1e-9,xplot,'spline');
 totalE=hall-convection-divp;
 % temperature Trr  Tphiphi
 Terr=interp1(momentum{6,1},momentum{7,1},xplot,'spline')./Ne/1e6/params.e;

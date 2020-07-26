@@ -161,7 +161,7 @@ momentum={'f_tidu',f_tidu;
     'prrtidu',prrtidu;
     'pfftidu',pfftidu;
     'prftidu',prftidu};  
-% the momentum including:   1) diamagnetic drift velocity
+% the A including:   1) diamagnetic drift velocity
 %                    2) E ¡Á B drift
 %                    3) diamagnetic + E * B
 %                    4) the first momentum result for bulk velocity
