@@ -1,3 +1,4 @@
+  [![DOI](https://zenodo.org/badge/282154562.svg)](https://zenodo.org/badge/latestdoi/282154562)
   # Cavity Model
   Get the self-consistent profiles of magnetic cavities with circular cross-section.
   # Description
