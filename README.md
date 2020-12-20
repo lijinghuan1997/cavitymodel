@@ -1,6 +1,7 @@
   [![DOI](https://zenodo.org/badge/282154562.svg)](https://zenodo.org/badge/latestdoi/282154562)
   # Cavity Model
   Get the self-consistent profiles of magnetic cavities with circular cross-section.
+  version_2 is avaliable, which is recommended.
   # Description
   This magnetic cavity model is an equilibrium solution to the Vlasov-Maxwell equations, in the cylindrical coordinates, to reconstruct the magnetic cavities with circular cross-section. In the model, the proton/electron distribution is taken as functions of the particle motion invariants, particle energy, canonical angular momentum, and μ (magnetic moment) are included. They are combined to construct the current-carrying and background populations, for both electrons and protons, respectively. Then, the distribution functions are integrated to derive particle and current densities, which are substituted into Maxwell equations, to get the profiles of electromagnetic fields. Finally, you can get the self-consistent profiles for the magnetic cavity, including the electromagnetic fields and the particle distributions. 
 
