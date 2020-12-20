@@ -59,9 +59,9 @@ nn_e_1=@(xx,yy)integral2(@(vx,vy)f_e_rec_1(vx,vy,xx,yy),-3,3,-3,3); % current-ca
 nn_e_2=@(xx,yy)integral2(@(vx,vy)f_e_rec_2(vx,vy,xx,yy),-3,3,-3,3); % background
 nn_=@(xx,yy)integral2(@(vx,vy)f_e_rec__(vx,vy,xx,yy),-3,3,-3,3);
 % handle for bulk velocity
-vvreal= @(xx,yy)integral2(@(vx,vy)f_e_rec__(vx,vy,rr(xx,yy),0).*vy*v0,-3,3,-3,3)/nn_e(rr(xx,yy),0);
+vvreal= @(xx,yy)integral2(@(vx,vy)f_e_rec__(vx,vy,rr(xx,yy),0).*vy*v0,-3,3,-3,3,'AbsTol',1e2,'RelTol',1e-4)/nn_e(rr(xx,yy),0);
 vvrealx= @(xx,yy)integral2(@(vx,vy)f_e_rec__(vx,vy,rr(xx,yy),0).*vx*v0,-3,3,-3,3)/nn_e(rr(xx,yy),0);
-vvreali= @(xx,yy)integral2(@(vx,vy)f_i_rec__(vx,vy,rr(xx,yy),0).*vy*v0i,-3,3,-3,3)/nn_i(rr(xx,yy),0);
+vvreali= @(xx,yy)integral2(@(vx,vy)f_i_rec__(vx,vy,rr(xx,yy),0).*vy*v0i,-3,3,-3,3,'AbsTol',1e2,'RelTol',1e-4)/nn_i(rr(xx,yy),0);
  % compare f_tidu+E¡ÁB and int_v
     yn=@(t)interp1(xnew,y(2,:),t,'spline');
     vvx=@(xx,yy)vvreal(xx,yy)*(-yy)/rr(xx,yy);
