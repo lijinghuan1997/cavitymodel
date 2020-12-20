@@ -1,0 +1,17 @@
+% combining the momentum_submit.m and model_submit.m before into one file.
+% limiting the integration error to decrease the running time.
+% add the 3-D distribution functions (PSD and energy flux)
+% The total time spent now is near half an hour.
+
+Run the demo.m
+
+The code_submit.m is the same as before, which provides the profiles of electromagnetic fields (saved in data_end.mat)
+For the momentum_submit.m, substitute the results into the distribution functions 
+and then integrate them to get the momentums, kept in the line_data.mat.
+
+We newly provide an example to plot the profiles of both the field and plasma profiles.
+
+Because the distributions are all Maxwellian in the vz direction, so the simplified integrations are all 2-D.
+We provide the 3-D velocity distributions in the final part, which may help to plot the PADs.
+
+Any questions, please contact jinghuan.li@pku.edu.cn without hesitation. 
